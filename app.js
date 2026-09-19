@@ -86,13 +86,8 @@ navLinks.addEventListener("click", event => { if (event.target.matches("a")) nav
 document.querySelector("#contact-form").addEventListener("submit", event => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
-  const email = "YOUR_EMAIL";
+  const email = "samirchapagain10@gmail.com";
   const subject = encodeURIComponent(`Portfolio enquiry from ${form.get("name")}`);
   const body = encodeURIComponent(`Name: ${form.get("name")}\nEmail: ${form.get("email")}\n\n${form.get("message")}`);
-  const note = document.querySelector("#form-note");
-  if (email === "YOUR_EMAIL") {
-    note.textContent = "Add your email address in app.js before using the contact form.";
-    return;
-  }
   window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 });
