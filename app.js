@@ -17,13 +17,14 @@ const defaultPortfolioData = {
       status: "Documentation in progress"
     },
     {
-      number: "02", title: "Network Security Lab",
-      description: "A VMware-based networking and security laboratory for exploring architecture, connectivity, troubleshooting, and traffic analysis.",
-      technologies: ["VMware Workstation", "Linux", "Windows", "Wireshark", "Nmap"],
-      details: "A practical environment for working with virtual machines, IP addressing, connectivity checks, network troubleshooting, packet analysis, and foundational security concepts.",
-      objective: "Create a repeatable environment for learning network behavior and documenting observations without overstating results.",
-      skills: ["Network architecture", "Traffic analysis", "Troubleshooting"],
-      status: "Active learning project"
+      number: "02", title: "Play Card App",
+      description: "A deployed web application demonstrating interactive gameplay and frontend application development.",
+      technologies: ["Web application", "JavaScript", "Vercel"],
+      details: "A live Play Card application deployed on Vercel and available for demonstration.",
+      objective: "Build and publish an interactive web application with a usable public interface.",
+      skills: ["Frontend development", "Application deployment", "User interaction"],
+      status: "Live project",
+      url: "https://playcard-frontend.vercel.app/"
     },
     {
       number: "03", title: "SOC Analyst Practice Lab",
