@@ -1,0 +1,19 @@
+{
+  "skills": [
+    {"title":"Networking","items":["TCP/IP","OSI Model","DNS & DHCP","VLANs","Routing & Switching","Troubleshooting","Cisco Networking"]},
+    {"title":"Cybersecurity","items":["Vulnerability Assessment","Security Monitoring","Incident Response","Threat Analysis","Security Documentation","MITRE ATT&CK"]},
+    {"title":"Security tools","items":["Wireshark","Nmap","Nessus","Greenbone / OpenVAS","Burp Suite","Metasploit"]},
+    {"title":"Operating systems","items":["Linux","Ubuntu Server","Windows","SSH administration"]},
+    {"title":"Automation","items":["Python","Basic scripting","Process automation","Technical writing"]}
+  ],
+  "projects": [
+    {"number":"01","title":"Greenbone Vulnerability Management Lab","description":"Deployment and configuration of GVM / OpenVAS on Ubuntu Server in a VMware virtualized environment.","technologies":["Ubuntu Server","GVM / OpenVAS","PostgreSQL","VMware","SSH"],"details":"A documented infrastructure lab covering Ubuntu preparation, dependencies, PostgreSQL, GVM components, service configuration, web interface setup, SSH administration, troubleshooting, and setup verification.","objective":"Build familiarity with vulnerability-management infrastructure and the operational steps needed to validate a working security platform.","skills":["Linux administration","Service verification","Technical documentation"],"status":"Documentation in progress"},
+    {"number":"02","title":"Network Security Lab","description":"A VMware-based networking and security laboratory for exploring architecture, connectivity, troubleshooting, and traffic analysis.","technologies":["VMware Workstation","Linux","Windows","Wireshark","Nmap"],"details":"A practical environment for working with virtual machines, IP addressing, connectivity checks, network troubleshooting, packet analysis, and foundational security concepts.","objective":"Create a repeatable environment for learning network behavior and documenting observations without overstating results.","skills":["Network architecture","Traffic analysis","Troubleshooting"],"status":"Active learning project"},
+    {"number":"03","title":"SOC Analyst Practice Lab","description":"A hands-on security operations laboratory for practicing monitoring, alert investigation, log analysis, documentation, and response workflows.","technologies":["Linux","Windows","Wireshark","SIEM concepts","MITRE ATT&CK"],"details":"A structured practice environment organized around detection, investigation, analysis, documentation, and response. Incidents and findings are only added when supported by lab evidence.","objective":"Develop disciplined security-operations habits and clear incident documentation through repeatable exercises.","skills":["Log analysis","Investigation workflow","Incident documentation"],"status":"Active learning project"}
+  ],
+  "documents": [
+    {"title":"GVM / OpenVAS Installation Guide","category":"Infrastructure · Coming soon","description":"A step-by-step record of the Ubuntu Server deployment and service verification process.","url":"#contact"},
+    {"title":"Network Lab Documentation","category":"Architecture · Coming soon","description":"Virtual network topology, addressing plan, connectivity checks, and observations.","url":"#contact"},
+    {"title":"Security Lab Reports","category":"Operations · Coming soon","description":"Structured reports for monitoring exercises, analysis, and incident documentation.","url":"#contact"}
+  ]
+}

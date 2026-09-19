@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME
+  branch: main
+  base_url: https://samirchapagai.com.np
+  auth_endpoint: /api/auth
+media_folder: "uploads"
+public_folder: "/uploads"
+site_url: https://samirchapagai.com.np
+display_url: https://samirchapagai.com.np
+collections:
+  - name: portfolio
+    label: Portfolio content
+    files:
+      - name: portfolio
+        label: Projects, skills & documents
+        file: content/portfolio.json
+        format: json
+        fields:
+          - label: Skills
+            name: skills
+            widget: list
+            fields:
+              - {label: Category, name: title, widget: string}
+              - {label: Items, name: items, widget: list}
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - {label: Number, name: number, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Technologies, name: technologies, widget: list}
+              - {label: Details, name: details, widget: text}
+              - {label: Objective, name: objective, widget: text}
+              - {label: Skills demonstrated, name: skills, widget: list}
+              - {label: Status, name: status, widget: string}
+          - label: Technical documents
+            name: documents
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Category, name: category, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Link, name: url, widget: string, required: false}
