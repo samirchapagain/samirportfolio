@@ -32,7 +32,8 @@ const defaultPortfolioData = {
       details: "A structured practice environment organized around detection, investigation, analysis, documentation, and response. Incidents and findings are only added when supported by lab evidence.",
       objective: "Develop disciplined security-operations habits and clear incident documentation through repeatable exercises.",
       skills: ["Log analysis", "Investigation workflow", "Incident documentation"],
-      status: "Active learning project"
+      status: "Active learning project",
+      url: "https://soc-analyst-toolkit.onrender.com"
     }
   ],
   documents: [
@@ -67,7 +68,7 @@ loadPortfolioData().then(portfolioData => {
   const modalContent = document.querySelector("#modal-content");
   document.querySelectorAll("[data-project]").forEach(button => button.addEventListener("click", () => {
   const project = portfolioData.projects.find(item => item.number === button.dataset.project);
-  modalContent.innerHTML = `<p class="modal-eyebrow">${project.number} / ${project.status}</p><h2>${project.title}</h2><p>${project.details}</p><h3>Objective</h3><p>${project.objective}</p><h3>Environment &amp; tools</h3><div class="tech-list">${project.technologies.map(tech => `<span>${tech}</span>`).join("")}</div><h3>Skills demonstrated</h3><ul>${project.skills.map(skill => `<li>${skill}</li>`).join("")}</ul><p class="form-note">Detailed documentation and evidence will be linked here as they are published.</p>`;
+  modalContent.innerHTML = `<p class="modal-eyebrow">${project.number} / ${project.status}</p><h2>${project.title}</h2><p>${project.details}</p><h3>Objective</h3><p>${project.objective}</p><h3>Environment &amp; tools</h3><div class="tech-list">${project.technologies.map(tech => `<span>${tech}</span>`).join("")}</div><h3>Skills demonstrated</h3><ul>${project.skills.map(skill => `<li>${skill}</li>`).join("")}</ul>${project.url ? `<p><a class="button button-primary" href="${project.url}" target="_blank" rel="noopener noreferrer">Open live project ↗</a></p>` : ""}<p class="form-note">Detailed documentation and evidence will be linked here as they are published.</p>`;
   modal.showModal();
   }));
   document.querySelector(".modal-close").addEventListener("click", () => modal.close());
